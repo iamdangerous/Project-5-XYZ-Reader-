@@ -1,0 +1,75 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="192dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:toolbarId="@+id/awesome_toolbar">
+
+            <com.example.xyzreader.view.AwesomeToolbar
+                android:id="@+id/awesome_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </com.example.xyzreader.view.AwesomeToolbar>
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="@drawable/logo"-->
+                <!--app:title="Hello">-->
+                <!---->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="bottom|right|end"-->
+                    <!--android:padding="3dp"-->
+                    <!--android:text="XYZ"-->
+                    <!--android:textSize="30sp"-->
+                    <!--android:textStyle="normal|bold" />-->
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:textSize="30sp"-->
+                <!--android:text="XYZ"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textStyle="normal|bold" />-->
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:paddingLeft="4dp"-->
+                <!--android:paddingStart="4dp"-->
+                <!--android:textSize="30sp"-->
+                <!--android:text="Reader"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.Toolbar>-->
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1600dp" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
