@@ -8,8 +8,8 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        app:elevation="6dp"
-        app:pressedTranslationZ="30dp"
+        app:elevation="@dimen/fab_elevation"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         app:layout_anchor="@+id/appbar"
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:toolbarId="@+id/toolbar"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             >
 
             <android.support.v7.widget.AppCompatImageView
